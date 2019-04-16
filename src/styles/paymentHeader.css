@@ -13,7 +13,7 @@ nav {
 }
 
 .left-nav {
-  width: 500px;
+  width: 550px;
   justify-content: space-around;
 }
 
@@ -61,14 +61,65 @@ nav .right-nav button {
   display: flex;
 }
 
-.solutions {
+.solutions,
+.story,
+.sign-in {
   flex-direction: row;
   justify-content: space-around;
-  padding: 1rem 10rem;
+  margin: 2rem 10rem;
   height: 0px;
+  transition: height 0.5s;
   overflow: hidden;
 }
+.story,
+.sign-in {
+  margin-top: -2rem;
+}
+.solutions-left,
+.story-left,
+.sign-in-left {
+  list-style: none;
+}
+.solutions-left li,
+.story-left li,
+.sign-in-left li {
+  margin: 0rem;
+  padding: 0rem;
+  margin-bottom: 2rem;
+}
+.solutions-left li img,
+.story-left li img,
+.sign-in-left li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+.solutions-left li p,
+.story-left li p,
+.sign-in-left li p {
+  font-family: Arial;
+}
+.solutions-right,
+.story-right {
+  padding: 1rem 4rem;
+  font-family: Arial;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
 
-.solutions-right {
-  padding: 1rem;
+.solutions-right li,
+.story-right li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.small {
+  font-size: 0.9rem;
 }
