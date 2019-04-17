@@ -16,12 +16,10 @@ library.add(faChevronDown)
 
 const PaymentHeader = () => {
   const handleClickOutside = type => {
-    console.log(type)
     document.addEventListener("click", e => {
       let typeElement = document.querySelector(`.${type}`)
-      console.log(e.target)
-      if (typeElement.style.height === "15rem" && e.target !== typeElement) {
-        typeElement.style.height = "0rem"
+      if (typeElement.classList.contains("show") && e.target !== typeElement) {
+        typeElement.classList.remove("show")
       }
     })
   }
@@ -32,11 +30,10 @@ const PaymentHeader = () => {
 
   const dropDownHandler = type => {
     let typeElement = document.querySelector(`.${type}`)
-    console.log(typeElement.style.height)
-    if (typeElement.style.height === "15rem") {
-      typeElement.style.height = "0rem"
+    if (typeElement.classList.contains("show")) {
+      typeElement.classList.remove("show")
     } else {
-      typeElement.style.height = "15rem"
+      typeElement.classList.add("show")
     }
   }
   return (
@@ -200,7 +197,7 @@ const PaymentHeader = () => {
       </div>
       {/* END STORY DROPDOWN */}
       {/* START SIGNIN DROPDOWN */}
-      <div className="sign-in" style={{ marginLeft: "25rem" }}>
+      <div className="sign-in" style={{ paddingLeft: "25rem" }}>
         <ul className="sign-in-left">
           <li>
             <div className="flex column">

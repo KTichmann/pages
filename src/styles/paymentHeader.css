@@ -1,5 +1,8 @@
 nav {
   flex-direction: column;
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
 }
 
 .main-nav {
@@ -10,6 +13,19 @@ nav {
   width: 100%;
   height: 4rem;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.main-nav button {
+  box-shadow: 0.1125rem 0.3125rem 0.3125rem 0rem rgba(125, 138, 149, 0.45);
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 0.1s;
+}
+
+.main-nav button:active {
+  box-shadow: 0 0.1125rem 0.1125rem 0rem rgba(125, 138, 149, 0.45);
+  transition: box-shadow 0.1s;
+  transform: translateY(0.5px);
 }
 
 .left-nav {
@@ -66,14 +82,14 @@ nav .right-nav button {
 .sign-in {
   flex-direction: row;
   justify-content: space-around;
-  margin: 2rem 10rem;
   height: 0px;
-  transition: height 0.5s;
+  position: absolute;
+  z-index: 10000;
+  transition: height 0.2s;
   overflow: hidden;
-}
-.story,
-.sign-in {
-  margin-top: -2rem;
+  width: 100%;
+  background-color: white;
+  top: 4rem;
 }
 .solutions-left,
 .story-left,
@@ -110,6 +126,8 @@ nav .right-nav button {
 .story-right li {
   margin-bottom: 0.5rem;
   list-style: none;
+  cursor: pointer;
+  color: rgb(50, 50, 50);
 }
 
 .column {
@@ -122,4 +140,9 @@ nav .right-nav button {
 
 .small {
   font-size: 0.9rem;
+}
+
+.show {
+  height: 15rem;
+  padding: 2rem 0rem;
 }
