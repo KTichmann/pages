@@ -27,7 +27,7 @@
 }
 .header-text {
   position: relative;
-  top: 65vh;
+  top: 62vh;
   left: 12%;
   display: flex;
   color: white;
@@ -44,7 +44,48 @@
 .header .header-text h1 {
   position: fixed;
   font-size: 16rem;
-  margin-bottom: 0rem;
+}
+
+@media only screen and (max-width: 1870px) {
+  .header .header-text h1 {
+    font-size: 12rem;
+  }
+
+  .header .subheading-section {
+    margin-top: 5rem;
+  }
+
+  .header--2 .subheading-section {
+    margin-top: 12rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .header .header-text h1 {
+    font-size: 10rem;
+  }
+
+  .header .subheading-section {
+    margin-top: 3rem;
+  }
+
+  .header--2 .subheading-section {
+    margin-top: 15rem;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .header .header-text h1 {
+    font-size: 8rem;
+  }
+
+  .header .subheading-section {
+    margin-top: 1rem;
+  }
+
+  .header--2 .subheading-section {
+    margin-top: 10rem;
+  }
 }
 
 /* ABOUT SECTION */
@@ -75,6 +116,20 @@ small {
   margin-top: 1rem;
 }
 
+@media (max-width: 1870px) {
+  .about-section {
+    padding: 5rem 10rem 0rem 10rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .about-section {
+    padding: 5rem 3rem 0rem 3rem;
+  }
+}
+
+/* BANNER SECTION  */
+
 .banner {
   margin: 5rem 0rem;
   width: 100%;
@@ -91,13 +146,15 @@ small {
   display: flex;
   justify-content: space-around;
 }
-
 .logos img {
   width: 5rem;
   height: 5rem;
 }
+
+/* BLOG SECTION */
+
 .blog {
-  margin: 0rem 15rem;
+  margin: 0rem 7rem;
 }
 .row {
   justify-content: space-between;
@@ -105,13 +162,80 @@ small {
 .el:not(:last-child) {
   margin-right: 3rem;
 }
+
+.el {
+  width: 30%;
+}
 .el img {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   height: 10rem;
 }
-
 .blog h3 {
   font-size: 2.3rem;
+}
+.blog h5 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* Numbers */
+
+.numbers {
+  text-align: center;
+  margin: 4rem 0rem;
+}
+
+.numbers h2 {
+  font-size: 3rem;
+}
+
+.numbers-main {
+  margin: 3rem;
+  justify-content: space-around;
+}
+
+.numbers-main p {
+  font-size: 0.8rem;
+}
+
+.number {
+  font-size: 6rem;
+  line-height: 8rem;
+  font-weight: 900;
+  color: #8247b5;
+}
+
+.numbers button {
+  margin: 0rem auto;
+  border-radius: 20px;
+  padding: 1rem 3rem;
+  border: none;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: white;
+  color: #8247b5;
+  border: 3px solid #8247b5;
+}
+footer {
+  justify-content: center;
+  padding: 5rem 5rem 2rem 5rem;
+  background-color: #8247b5;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 2rem;
+}
+
+footer ul:not(:last-child) {
+  border-right: 1px solid white;
+  padding-right: 9rem;
+}
+
+footer ul li {
+  cursor: pointer;
 }

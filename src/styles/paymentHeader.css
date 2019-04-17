@@ -15,14 +15,14 @@ nav {
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
 }
 
-.main-nav button {
+button {
   box-shadow: 0.1125rem 0.3125rem 0.3125rem 0rem rgba(125, 138, 149, 0.45);
   cursor: pointer;
   outline: none;
   transition: box-shadow 0.1s;
 }
 
-.main-nav button:active {
+button:active {
   box-shadow: 0 0.1125rem 0.1125rem 0rem rgba(125, 138, 149, 0.45);
   transition: box-shadow 0.1s;
   transform: translateY(0.5px);

@@ -11,6 +11,12 @@ import logoFour from "../images/logo-4.png"
 import aboutOne from "../images/about1.jpg"
 import aboutTwo from "../images/about2.jpg"
 import aboutThree from "../images/about3.jpg"
+import blogOne from "../images/blog1.jpg"
+import blogTwo from "../images/blog2.jpg"
+import blogThree from "../images/blog3.jpg"
+import blogFour from "../images/blog4.jpg"
+import blogFive from "../images/blog5.jpg"
+import blogSix from "../images/blog6.jpg"
 
 const IndexPage = () => {
   window.addEventListener("scroll", e => {
@@ -36,7 +42,7 @@ const IndexPage = () => {
       h1.style.position = "absolute"
     } else {
       h1.style.position = "fixed"
-      h1.style.top = "65vh"
+      h1.style.top = "62vh"
     }
   })
   return (
@@ -135,38 +141,108 @@ const IndexPage = () => {
         <h3>Our Blog</h3>
         <div className="row flex">
           <div className="el">
-            <img src={aboutThree} alt="blog-img" />
-            <h6>Lorem Ipsum Dolor Sit</h6>
+            <img src={blogOne} alt="blog-img" />
+            <h5>Lorem Ipsum Dolor Sit</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Repellendus ea voluptatibus at iusto reiciendis, neque velit, rem
-              exercitationem laboriosam veniam beatae unde, ut hic consequuntur
-              sed explicabo vero ducimus ipsa.
+              exercitationem.
             </p>
           </div>
           <div className="el">
-            <img src={aboutThree} alt="blog-img" />
-            <h6>Lorem Ipsum Dolor Sit</h6>
+            <img src={blogTwo} alt="blog-img" />
+            <h5>Lorem Ipsum Dolor Sit</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Repellendus ea voluptatibus at iusto reiciendis, neque velit, rem
-              exercitationem laboriosam veniam beatae unde, ut hic consequuntur
-              sed explicabo vero ducimus ipsa.
+              exercitationem.
             </p>
           </div>
           <div className="el">
-            <img src={aboutThree} alt="blog-img" />
-            <h6>Lorem Ipsum Dolor Sit</h6>
+            <img src={blogThree} alt="blog-img" />
+            <h5>Lorem Ipsum Dolor Sit</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Repellendus ea voluptatibus at iusto reiciendis, neque velit, rem
-              exercitationem laboriosam veniam beatae unde, ut hic consequuntur
-              sed explicabo vero ducimus ipsa.
+              exercitationem.
             </p>
           </div>
         </div>
-        <div className="row" />
+        <div className="row flex" style={{ marginTop: "3rem" }}>
+          <div className="el">
+            <img src={blogFour} alt="blog-img" />
+            <h5>Lorem Ipsum Dolor Sit</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus ea voluptatibus at iusto reiciendis, neque velit, rem
+              exercitationem.
+            </p>
+          </div>
+          <div className="el">
+            <img src={blogFive} alt="blog-img" />
+            <h5>Lorem Ipsum Dolor Sit</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus ea voluptatibus at iusto reiciendis, neque velit, rem
+              exercitationem.
+            </p>
+          </div>
+          <div className="el">
+            <img src={blogSix} alt="blog-img" />
+            <h5>Lorem Ipsum Dolor Sit</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus ea voluptatibus at iusto reiciendis, neque velit, rem
+              exercitationem.
+            </p>
+          </div>
+        </div>
       </div>
+      <div className="numbers">
+        <h2>Here's some numbers</h2>
+        <div className="numbers-main flex">
+          <div>
+            <span className="number">28b</span>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates pariatur odio quibusdam
+            </p>
+          </div>
+          <div>
+            <span className="number">4000</span>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates pariatur odio quibusdam
+            </p>
+          </div>
+          <div>
+            <span className="number">140k</span>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates pariatur odio quibusdam
+            </p>
+          </div>
+        </div>
+        <button>How we did the thing</button>
+      </div>
+      <footer className="flex">
+        <ul>
+          <li className="bold">Lorem Ipsum</li>
+          <li>Foo</li>
+          <li>Bar</li>
+          <li>Baz</li>
+        </ul>
+        <ul>
+          <li className="bold">We Work</li>
+          <li>Fizz</li>
+          <li>Buzz</li>
+        </ul>
+        <ul>
+          <li className="bold">Contact Us </li>
+          <li>023 555 676</li>
+          <li>12 Foo Rd, Barville, Bazzlevania</li>
+        </ul>
+      </footer>
     </Layout>
   )
 }
