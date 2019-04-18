@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import example from "../images/indexHeader.jpg"
 import "../styles/payment-solution.css"
 import logoOne from "../images/logo-1.png"
 import logoTwo from "../images/logo-2.png"
