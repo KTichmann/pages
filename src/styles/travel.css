@@ -1,0 +1,35 @@
+.travel-header {
+  margin: 0rem 5rem;
+  margin-top: 4.2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/travel-header.jpg");
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.travel-header h1 {
+  font-family: sans-serif;
+  padding-top: 8rem;
+  padding-left: 20%;
+}
+
+.white-bg {
+  background-color: white;
+}
+.travel-selection {
+  position: relative;
+  height: 20rem;
+  margin-top: -7rem;
+  background-color: transparent;
+}
+.travel-selection .travel-selection__header {
+  font-size: 0.8rem;
+}
+.travel-selection .travel-selection__header span {
+  padding: 1rem 0rem;
+  padding-right: 10rem;
+  background-color: #666;
+  color: white;
+}
