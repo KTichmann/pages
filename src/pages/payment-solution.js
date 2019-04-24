@@ -73,7 +73,7 @@ const IndexPage = () => {
       <div className="header header--3">
         <div className="header-text">
           <span className="subheading-section subheading-section--3">
-            <h2 className="bold">Adverb Verb</h2>
+            <h2 className="bold">Adjective Noun</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
               Reprehenderit distinctio dolor pariatur eum modi impedit.
