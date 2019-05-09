@@ -25,12 +25,50 @@
   background-color: transparent;
 }
 .travel-selection .travel-selection__header {
+  cursor: pointer;
   font-size: 0.8rem;
+  margin: 0rem;
 }
+
+.travel-selection .travel-selection__header span:hover {
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+}
+
 .travel-selection .travel-selection__header span {
   font-size: 0.6rem;
   padding: 0.8rem 2rem;
   padding-right: 10rem;
   background-color: #666;
   color: white;
+}
+
+.list-group-item {
+  border: none !important;
+  background-color: white !important;
+  color: #495057;
+}
+
+#list-tab .list-group-item.active {
+  transition: all 0.5s;
+  color: #495057;
+  border-bottom: 3px solid #fbe20a !important;
+}
+
+#nav-tabContent h5 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#nav-tabContent p {
+  font-size: 0.9rem;
+}
+
+#nav-tabContent .btn {
+  font-size: 0.8rem;
+  max-height: 3.3\rem;
+  margin-right: 5rem;
+}
+.yellow {
+  background-color: #fbe20a !important;
 }
