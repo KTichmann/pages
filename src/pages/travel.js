@@ -42,7 +42,7 @@ const Travel = () => {
                 role="tab"
                 aria-controls="home"
               >
-                Parking
+                Flights
               </a>
               <a
                 className="list-group-item list-group-item-action"
@@ -74,7 +74,26 @@ const Travel = () => {
               role="tabpanel"
               aria-labelledby="list-home-list"
             >
-              <h1>FORMS</h1>
+              <div className="d-flex justify-content-between list-home-inner">
+                <form>
+                  <div class="form-group d-flex ml-5 mt-1">
+                    <select class="form-control form-control-md mr-3">
+                      <option>New York</option>
+                      <option>Boston</option>
+                      <option>Cape Town</option>
+                    </select>
+                    <p class="mx-3 mt-2">TO</p>
+                    <select class="form-control form-control-md ml-3">
+                      <option>New York</option>
+                      <option>Boston</option>
+                      <option>Cape Town</option>
+                    </select>
+                  </div>
+                </form>
+                <button type="button" class="btn yellow px-3 py-3">
+                  See Flights
+                </button>
+              </div>
             </div>
             <div
               className="tab-pane fade"
@@ -118,6 +137,17 @@ const Travel = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="container lounges">
+        <div className="row d-flex justify-content-around">
+          <div>
+            <small>Pick a Lounge</small>
+            <h2>
+              Put the treat into your retreat with a stay in our 3 lounges
+            </h2>
+          </div>
+          <div>Test 2</div>
         </div>
       </div>
     </Layout>

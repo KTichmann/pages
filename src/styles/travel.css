@@ -72,3 +72,13 @@
 .yellow {
   background-color: #fbe20a !important;
 }
+#list-home {
+  width: 100%;
+}
+.list-home-inner {
+  width: 60%;
+}
+
+.show {
+  height: 8rem !important;
+}
