@@ -3,6 +3,9 @@ import Layout from "../components/layout"
 import "../styles/travel.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
+import oldPeople from "../images/oldPeople.jpg"
+import peopleScreaming from "../images/peopleScreaming.jpg"
+import bloodyHands from "../images/bloodyHands.jpg"
 
 const Travel = () => {
   return (
@@ -141,13 +144,131 @@ const Travel = () => {
       </div>
       <div className="container lounges">
         <div className="row d-flex justify-content-around">
-          <div>
-            <small>Pick a Lounge</small>
-            <h2>
+          <div className="col-6">
+            <small style={{ borderBottom: "3px solid #fbe20a" }}>
+              Pick a Lounge
+            </small>
+            <h2 className="mt-3">
               Put the treat into your retreat with a stay in our 3 lounges
             </h2>
           </div>
-          <div>Test 2</div>
+          <div className="col-6 pl-5">
+            <p style={{ width: "50%", margin: "3rem auto" }}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="container mt-4">
+        <div
+          id="peopleCarousel"
+          className="carousel slide"
+          data-ride="carousel"
+        >
+          <ol className="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            />
+            <li data-target="#peopleCarousel" data-slide-to="1" />
+            <li data-target="#peopleCarousel" data-slide-to="2" />
+          </ol>
+          <div class="carousel-inner" style={{ height: "25rem" }}>
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src={peopleScreaming}
+                alt="People at a concert"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src={oldPeople} alt="Two old people" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati aliquid alias.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src={bloodyHands}
+                alt="Bloody hands forming a heart"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati aliquid alias consequuntur.
+              </p>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#peopleCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true" />
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#peopleCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true" />
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div className="d-flex justify-content-center mt-5">
+          <button className="btn yellow">See more</button>
+        </div>
+      </div>
+      <div className="container mt-5">
+        <small style={{ borderBottom: "3px solid #fbe20a" }}>
+          WHAT TO DO ON HOLIDAY
+        </small>
+        <div className="row mt-4">
+          <div className="whatToDoBox col-md-4">
+            <img alt="old people" src={oldPeople} />
+            <h6>Lorem Ipsum Dolor</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              officiis, delectus, iure sint distinctio consequuntur temporibus
+              optio nihil rem.
+            </p>
+            <a href="#" className="btn yellow">
+              Learn More
+            </a>
+          </div>
+          <div className="whatToDoBox col-md-4">
+            <img alt="old people" src={oldPeople} />
+            <h6>Lorem Ipsum Dolor</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              officiis, delectus, iure sint distinctio consequuntur temporibus
+              optio nihil rem.
+            </p>
+            <a href="#" className="btn yellow">
+              Learn More
+            </a>
+          </div>
+          <div className="whatToDoBox col-md-4">
+            <img alt="old people" src={oldPeople} />
+            <h6>Lorem Ipsum Dolor</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              officiis, delectus, iure sint distinctio consequuntur temporibus
+              optio nihil rem.
+            </p>
+            <a href="#" className="btn yellow">
+              Learn More
+            </a>
+          </div>
         </div>
       </div>
     </Layout>
