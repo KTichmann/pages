@@ -3,9 +3,9 @@ import "../styles/travelHeader.css"
 
 const TravelHeader = () => {
   return (
-    <nav className="d-flex position-fixed flex-row justify-content-between">
+    <nav className="d-flex position-fixed flex-row justify-content-between travel-nav">
       <div className="d-flex flex-row">
-        <div className="logo mt-4">bOnline</div>
+        <div className="logo mt-4">Travel</div>
         <ul className="d-flex flex-row">
           <li className="list-group-item border-0">
             <a href="#">Flights</a>

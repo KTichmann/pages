@@ -1,11 +1,23 @@
 import React from "react"
 import Layout from "../components/layout"
+import { Link } from "gatsby"
 import "../styles/travel.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
+import Footer from "../components/footer"
 import oldPeople from "../images/oldPeople.jpg"
 import peopleScreaming from "../images/peopleScreaming.jpg"
 import bloodyHands from "../images/bloodyHands.jpg"
+import durban from "../images/durban.jpg"
+import capeTown from "../images/capeTown.jpg"
+import joburg from "../images/joburg.jpg"
+import kruger from "../images/kruger.jpg"
+import travel from "../images/travel.png"
+import children from "../images/children.png"
+import bag from "../images/bag.png"
+import wheelchair from "../images/wheelchair.png"
+import passport from "../images/passport.png"
+import security from "../images/security.png"
 
 const Travel = () => {
   return (
@@ -271,6 +283,82 @@ const Travel = () => {
           </div>
         </div>
       </div>
+      <div className="container mt-5">
+        <small style={{ borderBottom: "3px solid #fbe20a" }}>
+          FEATURED DESTINATIONS
+        </small>
+        <h2 className="mt-3 mb-4">Exciting Adventures Start Here</h2>
+        <div className="row">
+          <div className="col-md-3 travel-adventures p-5">
+            <p style={{ borderBottom: "1px solid #fbe20a" }} className="pb-2">
+              #CapeTown
+            </p>
+            <h2>01</h2>
+            <img src={capeTown} alt="" />
+          </div>
+          <div className="col-md-3 travel-adventures p-5">
+            <p style={{ borderBottom: "1px solid #fbe20a" }} className="pb-2">
+              #Joburg
+            </p>
+            <h2>02</h2>
+            <img src={joburg} alt="" />
+          </div>
+          <div className="col-md-3 travel-adventures p-5">
+            <p style={{ borderBottom: "1px solid #fbe20a" }} className="pb-2">
+              #Durban
+            </p>
+            <h2>03</h2>
+            <img src={durban} alt="" />
+          </div>
+          <div className="col-md-3 travel-adventures p-5">
+            <p style={{ borderBottom: "1px solid #fbe20a" }} className="pb-2">
+              #KrugerPark
+            </p>
+            <h2>04</h2>
+            <img src={kruger} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="my-5 container">
+        <small style={{ borderBottom: "3px solid #fbe20a" }}>HELP</small>
+        <h2 className="mt-3 mb-4">Let us help with your journey</h2>
+        <div class="row">
+          <div className="col-md-3 guide-box">
+            <img src={travel} />
+            <h6>Checking in</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div className="col-md-3 offset-md-1 guide-box">
+            <img src={bag} />
+            <h6>Packing your luggage</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div className="col-md-3 offset-md-1 guide-box">
+            <img src={children} />
+            <h6>Travelling with children</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div className="col-md-3 guide-box">
+            <img src={passport} />
+            <h6>Travel documents</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div className="col-md-3 offset-md-1 guide-box">
+            <img src={security} />
+            <h6>Getting through security</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div className="col-md-3 offset-md-1 guide-box">
+            <img src={wheelchair} />
+            <h6>Special assistance</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <button className="btn yellow mt-4">Read More Guides</button>
+      </div>
+      <Footer styles={{ backgroundColor: "#666" }} />
     </Layout>
   )
 }

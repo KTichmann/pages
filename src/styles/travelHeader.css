@@ -1,35 +1,36 @@
-nav {
+.travel-nav {
   width: 100%;
   padding: 0rem 5rem;
+  background-color: white;
 }
 
-nav a {
+.travel-nav a {
   color: black;
 }
 
-nav ul {
+.travel-nav ul {
   margin-top: 1.2rem;
   margin-bottom: 0rem;
 }
 
-nav ul li {
+.travel-nav ul li {
   background-color: transparent !important;
 }
 
-nav a:hover {
+.travel-nav a:hover {
   text-decoration: none;
   color: black;
   border-bottom: 5px solid #fbe20a;
   transition: all 0.3s;
 }
 
-nav .right-section {
+.travel-nav .right-section {
   background-color: black;
   color: white;
   font-size: 0.8rem;
   font-weight: 600;
 }
 
-nav .booking {
+.travel-nav .booking {
   cursor: pointer;
 }
