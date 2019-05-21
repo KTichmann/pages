@@ -1,0 +1,72 @@
+.clonepen-card {
+  margin-left: 5rem;
+  margin-bottom: 4rem;
+  width: 20rem;
+  border-radius: 10px;
+  background-color: #2d303a;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.clonepen-card img {
+  width: 20rem;
+  height: 11rem;
+  margin-bottom: 1rem;
+}
+
+.clonepen-card .meta {
+  padding: 0px 10px;
+  height: 55px;
+  display: flex;
+}
+
+.clonepen-card .meta .profile {
+  margin-left: 10px;
+  margin-top: 5px;
+  color: white;
+}
+
+.clonepen-card .meta .profile .title {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.clonepen-card .meta .profile .username {
+  color: #aaaebc;
+  font-size: 0.7rem;
+  margin-top: 1px;
+}
+
+.clonepen-card .meta img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.hr {
+  width: 90%;
+  border-bottom: 1px solid #555;
+  height: 1px;
+  margin: 0.5rem 1rem;
+}
+
+.info {
+  padding: 10px 1rem;
+  padding-bottom: 0rem;
+  color: white;
+  display: flex;
+}
+
+.info .small {
+  width: 20px;
+  height: 20px;
+}
+
+.info small {
+  padding-left: 0.5rem;
+  padding-top: 0.1rem;
+}
+
+.info .block {
+  margin-right: 1rem;
+}

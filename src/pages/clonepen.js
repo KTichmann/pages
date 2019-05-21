@@ -9,11 +9,9 @@ import Drawer from "@material-ui/core/Drawer"
 import List from "@material-ui/core/List"
 import Divider from "@material-ui/core/Divider"
 import ListItem from "@material-ui/core/ListItem"
-import ListItemIcon from "@material-ui/core/ListItemIcon"
-import ListItemText from "@material-ui/core/ListItemText"
-import InboxIcon from "@material-ui/icons/MoveToInbox"
-import MailIcon from "@material-ui/icons/Mail"
+import Card from "../components/clonepenCard"
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core"
+import user from "../images/user.jpg"
 
 const theme = createMuiTheme({
   root: {
@@ -185,6 +183,17 @@ const ClonePen = props => {
       <div className={classes.mainContent}>
         <h1 style={{ fontWeight: 900 }}>Picked Pens</h1>
         <hr style={{ height: "4px", backgroundColor: "#0ebeff" }} />
+      </div>
+      <div style={{ display: "flex", flexWrap: "wrap", paddingLeft: "6rem" }}>
+        <Card img="https://picsum.photos/200/300" userImg={user} />
+        <Card img="https://picsum.photos/200/300" userImg={user} />
+        <Card img="https://picsum.photos/200/300" userImg={user} />
+        <Card img="https://picsum.photos/200/300" userImg={user} />
+        <Card img="https://picsum.photos/200/300" userImg={user} />
+        <Card img="https://picsum.photos/200/300" userImg={user} />
+        <Card img="https://picsum.photos/200/300" userImg={user} />
+        <Card img="https://picsum.photos/200/300" userImg={user} />
+        <Card img="https://picsum.photos/200/300" userImg={user} />
       </div>
     </MuiThemeProvider>
   )
