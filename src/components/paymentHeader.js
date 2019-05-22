@@ -11,6 +11,7 @@ import down from "../images/down.png"
 import shop from "../images/shop.png"
 import withdraw from "../images/withdraw.png"
 import signIn from "../images/sign-in.png"
+import menu from "../images/menu.png"
 
 library.add(faChevronDown)
 
@@ -23,43 +24,65 @@ const PaymentHeader = () => {
       }
     })
   }
+  const handleMenuClose = () => {
+    const query = window.matchMedia("(max-width: 766px)")
+    document.addEventListener("click", e => {
+      if (query.matches) {
+        let menuDropdown = document.querySelector(".left-nav ul")
+        let menuIcon = document.querySelector(".menu-responsive")
 
+        menuDropdown.classList.add("hidden")
+        menuIcon.classList.remove("hidden")
+      }
+    })
+  }
   handleClickOutside("solutions")
   handleClickOutside("sign-in")
   handleClickOutside("story")
+  handleMenuClose()
 
   const dropDownHandler = type => {
     let typeElement = document.querySelector(`.${type}`)
-    if (typeElement.classList.contains("show")) {
-      typeElement.classList.remove("show")
-    } else {
-      typeElement.classList.add("show")
-    }
+    typeElement.classList.add("show")
   }
+
   return (
     <nav className="flex">
       <div className="flex main-nav">
         <div className="left-nav flex">
           <div className="logo">payments</div>
-          <ul className="flex">
-            <li
+          <div>
+            <ul className="flex hidden">
+              <li
+                onClick={() => {
+                  dropDownHandler("solutions")
+                }}
+              >
+                Our Solutions
+              </li>
+              <li
+                onClick={() => {
+                  dropDownHandler("story")
+                }}
+              >
+                Our Story
+              </li>
+              <li>Contact Us</li>
+            </ul>
+            <div
+              className="menu-responsive"
               onClick={() => {
-                dropDownHandler("solutions")
+                document
+                  .querySelector(".left-nav ul")
+                  .classList.remove("hidden")
+                document
+                  .querySelector(".menu-responsive")
+                  .classList.add("hidden")
               }}
             >
-              Our Solutions
-              <FontAwesomeIcon className="icon" icon="chevron-down" />
-            </li>
-            <li
-              onClick={() => {
-                dropDownHandler("story")
-              }}
-            >
-              Our Story
-              <FontAwesomeIcon className="icon" icon="chevron-down" />
-            </li>
-            <li>Contact Us</li>
-          </ul>
+              <img src={menu} />
+            </div>
+          </div>
         </div>
         <div className="right-nav">
           <span onClick={() => dropDownHandler("sign-in")} id="sign-in">

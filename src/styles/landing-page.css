@@ -1,3 +1,11 @@
+@import "https://fonts.googleapis.com/css?family=Lobster&display=swap";
+
+.logo h5 {
+  font-family: "Lobster";
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+}
+
 .landing-header {
   color: white;
 }
@@ -26,6 +34,14 @@ svg {
   margin-top: 2rem;
 }
 
+.partners {
+  justify-content: space-around;
+  padding: 2rem 0;
+  margin: 5rem 20%;
+  border-top: 0.5px solid #ccc;
+  border-bottom: 0.5px solid #ccc;
+}
+
 .icon,
 .partners img {
   width: 50px;
@@ -33,4 +49,5 @@ svg {
 
 .partners img {
   height: 50px;
+  margin-bottom: 0;
 }

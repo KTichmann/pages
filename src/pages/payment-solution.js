@@ -170,8 +170,6 @@ class IndexPage extends React.Component {
                 rem exercitationem.
               </p>
             </div>
-          </div>
-          <div className="row flex" style={{ marginTop: "3rem" }}>
             <div className="el">
               <img src={blogFour} alt="blog-img" />
               <h5>Lorem Ipsum Dolor Sit</h5>
@@ -200,6 +198,7 @@ class IndexPage extends React.Component {
               </p>
             </div>
           </div>
+          <div className="row flex" style={{ marginTop: "3rem" }} />
         </div>
         <div className="numbers">
           <h2>Here's some numbers</h2>

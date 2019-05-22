@@ -8,6 +8,7 @@ import logoOne from "../images/logo-1.png"
 import logoTwo from "../images/logo-2.png"
 import logoThree from "../images/logo-3.png"
 import logoFour from "../images/logo-4.png"
+import Footer from "../components/footer"
 
 const IndexPage = () => (
   <div>
@@ -83,14 +84,23 @@ const IndexPage = () => (
       <img src={logoThree} alt="logoThree" />
       <img src={logoFour} alt="logoFour" />
     </div>
-    <div className="quote">
-      <h6>
+    <div className="quote text-center">
+      <h5 className="bold" style={{ width: "30%", margin: "0 auto" }}>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
         ducimus possimus ipsa.
-      </h6>
-      <small>-LOREM IPSUM GUY</small>
-      <button className="btn btn-primary">Give us a call</button>
+      </h5>
+      <div className="small mt-2">-LOREM IPSUM GUY</div>
+      <button
+        className="btn btn-primary mt-3 mb-5 bold"
+        style={{
+          backgroundColor: "rgb(92, 106, 196)",
+          borderColor: "rgb(92, 106, 196)",
+        }}
+      >
+        Give us a call
+      </button>
     </div>
+    <Footer />
   </div>
 )
 
