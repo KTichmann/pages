@@ -9,8 +9,15 @@ const Footer = ({ styles }) => {
         <li>
           <Link to="/payment-solution">Payment Solution</Link>
         </li>
-        <li>Travel Site</li>
-        <li>Something Else</li>
+        <li>
+          <Link to="/travel">Travel</Link>
+        </li>
+        <li>
+          <Link to="/clonepen">Clonepen</Link>
+        </li>
+        <li>
+          <Link to="/landing-page">Landing Page</Link>
+        </li>
       </ul>
       <ul>
         <li className="bold">View My Portfolio</li>

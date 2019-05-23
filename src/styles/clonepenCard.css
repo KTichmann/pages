@@ -8,6 +8,26 @@
   display: inline-block;
 }
 
+.clonepen-card :hover {
+  box-shadow: "10px 10px 10px 10px 10px white";
+  cursor: pointer;
+}
+
+.clonepen-overlay {
+  width: 20rem;
+  height: 11rem;
+  position: absolute;
+  z-index: 100 !important;
+  border-radius: 10px 10px 0px 0px;
+  opacity: 0;
+  color: white;
+}
+
+.clonepen-overlay:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .clonepen-card img {
   width: 20rem;
   height: 11rem;

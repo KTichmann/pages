@@ -6,12 +6,13 @@ import love from "../images/love.png"
 
 const Card = props => (
   <div className="clonepen-card">
-    <img src={props.img} />
+    <div className="clonepen-overlay pt-4 pl-3">{props.hoverText}</div>
+    <img src={props.img} className="clonepen-img" />
     <div className="meta ">
       <img src={props.userImg} />
       <div className="profile">
-        <div className="title">Words are wordy</div>
-        <div className="username">Username</div>
+        <div className="title">{props.title}</div>
+        <div className="username">{props.username}</div>
       </div>
     </div>
     <div className="hr" />
