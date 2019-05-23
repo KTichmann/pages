@@ -1,0 +1,53 @@
+@import "https://fonts.googleapis.com/css?family=Lobster&display=swap";
+
+.logo h5 {
+  font-family: "Lobster";
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+}
+
+.landing-header {
+  color: white;
+}
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.curve {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  background-color: white;
+  height: 40rem;
+}
+.laptop {
+  width: 900px;
+  position: absolute;
+  top: 15;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2rem;
+}
+
+.partners {
+  justify-content: space-around;
+  padding: 2rem 0;
+  margin: 5rem 20%;
+  border-top: 0.5px solid #ccc;
+  border-bottom: 0.5px solid #ccc;
+}
+
+.icon,
+.partners img {
+  width: 50px;
+}
+
+.partners img {
+  height: 50px;
+  margin-bottom: 0;
+}

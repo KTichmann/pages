@@ -146,3 +146,16 @@ nav .right-nav button {
   height: 15rem;
   padding: 2rem 0rem;
 }
+
+.menu-responsive {
+  display: none;
+}
+
+@media (max-width: 1376px) {
+  #sign-in {
+    display: none;
+  }
+  .main-nav {
+    padding: 1rem 2rem;
+  }
+}
