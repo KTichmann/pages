@@ -45,7 +45,7 @@ const Travel = () => {
         >
           <div className="row">
             <div
-              className="list-group col-6 d-flex flex-row ml-5 text-center"
+              className="list-group col-6 d-flex flex-row ml-md-5 text-center"
               id="list-tab"
               role="tablist"
             >
@@ -89,9 +89,9 @@ const Travel = () => {
               role="tabpanel"
               aria-labelledby="list-home-list"
             >
-              <div className="d-flex justify-content-between list-home-inner">
+              <div className="d-flex justify-content-between list-home-inner mt-3 flex-column flex-sm-row">
                 <form>
-                  <div class="form-group d-flex ml-5 mt-1">
+                  <div class="form-group d-flex ml-md-5 px-2 mt-1">
                     <select class="form-control form-control-md mr-3">
                       <option>New York</option>
                       <option>Boston</option>
@@ -105,7 +105,7 @@ const Travel = () => {
                     </select>
                   </div>
                 </form>
-                <button type="button" class="btn yellow px-3 py-3">
+                <button type="button" class="btn yellow px-3 py-3 mx-3 mr-md-5">
                   See Flights
                 </button>
               </div>
@@ -116,7 +116,7 @@ const Travel = () => {
               role="tabpanel"
               aria-labelledby="list-profile-list"
             >
-              <div className="d-flex justify-content-between">
+              <div className="d-flex justify-content-between mt-3 flex-column flex-sm-row">
                 <div style={{ width: "65%" }}>
                   <h5 className="ml-5">Travel somewhere nice this winter.</h5>
                   <p className="ml-5 mt-3">
@@ -126,18 +126,18 @@ const Travel = () => {
                     Lannisters.
                   </p>
                 </div>
-                <button type="button" class="btn yellow px-3 py-3 mt-3">
+                <button type="button" class="btn yellow px-3 py-3 mx-3 mr-md-5">
                   Choose a Lounge
                 </button>
               </div>
             </div>
             <div
-              className="tab-pane fade"
+              className="tab-pane fade mt-3"
               id="list-messages"
               role="tabpanel"
               aria-labelledby="list-messages-list"
             >
-              <div className="d-flex justify-content-between">
+              <div className="d-flex justify-content-between flex-column flex-sm-row">
                 <div style={{ width: "65%" }}>
                   <h5 className="ml-5">Long summer is here!</h5>
                   <p className="ml-5 mt-3">
@@ -146,7 +146,7 @@ const Travel = () => {
                     Night's Watch, for this night and all the nights to come.
                   </p>
                 </div>
-                <button type="button" class="btn yellow px-3 py-3 mt-3">
+                <button type="button" class="btn yellow px-3 py-3 mx-3 mr-md-5">
                   Join the Fast Track
                 </button>
               </div>
@@ -154,9 +154,9 @@ const Travel = () => {
           </div>
         </div>
       </div>
-      <div className="container lounges">
-        <div className="row d-flex justify-content-around">
-          <div className="col-6">
+      <div className="container lounges pt-5">
+        <div className="row d-flex justify-content-around flex-column flex-md-row">
+          <div className="col-md-6">
             <small style={{ borderBottom: "3px solid #fbe20a" }}>
               Pick a Lounge
             </small>
@@ -164,7 +164,7 @@ const Travel = () => {
               Put the treat into your retreat with a stay in our 3 lounges
             </h2>
           </div>
-          <div className="col-6 pl-5">
+          <div className="col-md-6 pl-5">
             <p style={{ width: "50%", margin: "3rem auto" }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
@@ -186,35 +186,30 @@ const Travel = () => {
             <li data-target="#peopleCarousel" data-slide-to="1" />
             <li data-target="#peopleCarousel" data-slide-to="2" />
           </ol>
-          <div class="carousel-inner" style={{ height: "25rem" }}>
+          <div class="carousel-inner">
             <div class="carousel-item active">
               <img
                 class="d-block w-100"
-                src={peopleScreaming}
+                src="https://picsum.photos/id/189/700/300"
                 alt="People at a concert"
               />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati.
-              </p>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src={oldPeople} alt="Two old people" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati aliquid alias.
-              </p>
+              <p>Lorem ipsum dolor sit amet!</p>
             </div>
             <div class="carousel-item">
               <img
                 class="d-block w-100"
-                src={bloodyHands}
+                src="https://picsum.photos/id/237/700/300"
+                alt="Two old people"
+              />
+              <p>Lorem ipsum dolor?</p>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="https://picsum.photos/id/814/700/300"
                 alt="Bloody hands forming a heart"
               />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati aliquid alias consequuntur.
-              </p>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
           </div>
           <a
@@ -245,7 +240,7 @@ const Travel = () => {
           WHAT TO DO ON HOLIDAY
         </small>
         <div className="row mt-4">
-          <div className="whatToDoBox col-md-4">
+          <div className="whatToDoBox col-md-4 mb-5">
             <img alt="old people" src={oldPeople} />
             <h6>Lorem Ipsum Dolor</h6>
             <p>
@@ -257,7 +252,7 @@ const Travel = () => {
               Learn More
             </a>
           </div>
-          <div className="whatToDoBox col-md-4">
+          <div className="whatToDoBox col-md-4 mb-5">
             <img alt="old people" src={oldPeople} />
             <h6>Lorem Ipsum Dolor</h6>
             <p>
@@ -269,7 +264,7 @@ const Travel = () => {
               Learn More
             </a>
           </div>
-          <div className="whatToDoBox col-md-4">
+          <div className="whatToDoBox col-md-4 mb-5">
             <img alt="old people" src={oldPeople} />
             <h6>Lorem Ipsum Dolor</h6>
             <p>

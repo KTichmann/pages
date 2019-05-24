@@ -3,8 +3,8 @@ import React from "react"
 
 const Footer = ({ styles }) => {
   return (
-    <footer className="flex" style={{ ...styles }}>
-      <ul>
+    <footer className="flex flex-column flex-md-row" style={{ ...styles }}>
+      <ul className="mb-5">
         <li className="bold">Visit Another Page</li>
         <li>
           <Link to="/payment-solution">Payment Solution</Link>
@@ -12,7 +12,7 @@ const Footer = ({ styles }) => {
         <li>Travel Site</li>
         <li>Something Else</li>
       </ul>
-      <ul>
+      <ul className="mb-5">
         <li className="bold">View My Portfolio</li>
         <li className="bold">Home</li>
         <li className="bold">Projects</li>

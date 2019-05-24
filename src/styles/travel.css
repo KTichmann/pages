@@ -1,6 +1,4 @@
 .travel-header {
-  margin: 0rem 5rem;
-  margin-top: 4.2rem;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/travel-header.jpg");
   height: 50vh;
@@ -20,7 +18,7 @@
 }
 .travel-selection {
   position: relative;
-  height: 17rem;
+  min-height: 17rem;
   margin-top: -5rem;
   background-color: transparent;
 }
@@ -38,7 +36,6 @@
 .travel-selection .travel-selection__header span {
   font-size: 0.6rem;
   padding: 0.8rem 2rem;
-  padding-right: 10rem;
   background-color: #666;
   color: white;
 }
@@ -75,16 +72,13 @@
 #list-home {
   width: 100%;
 }
-.list-home-inner {
-  width: 60%;
-}
 
 .carousel-item p {
   width: 75%;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  top: 11rem;
+  transform: translate(-50%, -50%);
+  top: 50%;
   background-color: transparent;
   color: white;
   font-size: 1.2rem;

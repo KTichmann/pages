@@ -19,25 +19,31 @@ const IndexPage = () => (
       <div className="logo mb-5">
         <h5>LOGO</h5>
       </div>
-      <h1 style={{ fontSize: "3rem", fontWeight: 600 }} className="mb-3">
+      <h1
+        style={{ fontSize: "3rem", fontWeight: 600 }}
+        className="mb-3 px-5 px-md-0"
+      >
         Sell online with us
       </h1>
-      <h3 className="mb-4">Trusted by everyone, hated by none</h3>
-      <div className="freeTrial d-flex justify-content-center mb-1">
+      <h3 className="mb-4 px-5 px-md-0">Trusted by everyone, hated by none</h3>
+      <div className="freeTrial d-flex justify-content-center mb-1 px-5 px-md-0 flex-column flex-md-row">
         <input
-          style={{ width: "20rem" }}
-          className="form-control mr-4"
+          style={{ width: "15rem" }}
+          className="form-control mr-md-4 mr-auto ml-auto ml-md-0 mb-4 mb-md-0"
           type="text"
           placeholder="enter your email address"
         />
         <button
-          className="btn"
+          className="btn  mx-auto mx-md-0"
           style={{ backgroundColor: "rgb(4,4,4)", color: "white" }}
         >
           Start a free trial
         </button>
       </div>
-      <small style={{ display: "block", color: "white" }} className="mb-4 mt-3">
+      <small
+        style={{ display: "block", color: "white" }}
+        className="mb-4 mt-3 px-5 px-md-0"
+      >
         Try our services for 14 days for free. No credit card required.
       </small>
       <img src={laptop} alt="laptop" className="laptop" />
@@ -100,7 +106,7 @@ const IndexPage = () => (
         Give us a call
       </button>
     </div>
-    <Footer />
+    <Footer styles={{ backgroundColor: "#5c6ac4" }} />
   </div>
 )
 

@@ -19,8 +19,11 @@ const PaymentHeader = () => {
   const handleClickOutside = type => {
     document.addEventListener("click", e => {
       let typeElement = document.querySelector(`.${type}`)
-      if (typeElement.classList.contains("show") && e.target !== typeElement) {
-        typeElement.classList.remove("show")
+      if (
+        typeElement.classList.contains("payment-show") &&
+        e.target !== typeElement
+      ) {
+        typeElement.classList.remove("payment-show")
       }
     })
   }
@@ -43,7 +46,7 @@ const PaymentHeader = () => {
 
   const dropDownHandler = type => {
     let typeElement = document.querySelector(`.${type}`)
-    typeElement.classList.add("show")
+    typeElement.classList.add("payment-show")
   }
 
   return (
